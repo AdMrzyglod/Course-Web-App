@@ -61,6 +61,6 @@ Kupowanie opiera się na kodach kursu, których jest ograniczona ilość, oraz m
 Użytkownik indywidualny nie ma ograniczeń logowania. Pracownik oraz administrator mogą się zalogować na konto od daty aktywacji konta oraz jeżeli status konta jest aktywny.
 
 ## Schemat bazy danych
-![image](https://github.com/user-attachments/assets/e2992259-f00a-4c8f-9fac-2d4605ec85e8)
+![image](schemat.png)
 
   
