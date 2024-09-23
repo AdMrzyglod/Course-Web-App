@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+
+
+.section-add-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    border: 0.2rem solid black;
+}
+
+
+.input-section-box label{
+    color: grey;
+    align-self: flex-start;
+    font-size: 1.5rem;
+}
+
+.input-section-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 0.2rem solid dimgrey;
+    background-color: white;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 0 1rem 0 1rem;
+}
+
+
+.input-section-box input{
+    font-size: 1.2rem;
+    background-color: transparent;
+    outline: none;
+    padding: 0.7rem;
+    border: 0.2rem solid grey;
+}
+
+.input-section-box input:focus{
+    border-color: forestgreen;
+}
+
+
+.content{
+    width: fit-content;
+}
+
+
+
+.flex-container-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem
+}
+
+
+.flex-container-section .select-add{
+    border: 0.2rem solid grey;
+    align-self: center;
+    width: 20rem;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+
+
+.flex-container-section .select-add option{
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+
+
+.remove-section{
+    color: forestgreen;
+    background-color: yellowgreen;
+    font-size: 1.5rem;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-end;
+    margin: 1.5rem;
+    border: 0.2rem solid grey
+}
+
+
+.remove-section:hover{
+    background-color: darkgreen;
+}
+
+.subsection-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    border: 0.2rem solid grey;
+}
+
+.remove-subsection{
+    color: forestgreen;
+    background-color: yellowgreen;
+    font-size: 1rem;
+    width: fit-content;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-end;
+    margin: 1.2rem;
+    border: 0.2rem solid grey
+}
+
+
+.remove-subsection:hover{
+    background-color: darkgreen;
+}

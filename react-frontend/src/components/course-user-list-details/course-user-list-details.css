@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+
+.flex-box-user-list-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.flex-box-user-list-details>h2{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 1.7rem 1.7rem 1rem;
+}
+
+
+.user-details-data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: snow;
+    padding: 3rem;
+    width: 100%;
+    margin: 0 auto 0;
+}
+
+
+.user-details-data p{
+    font-size: 1.4rem;
+}
+
+.user-details-data div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    border: 0.2rem solid midnightblue;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
+.user-details-data p:first-child{
+    color: grey;
+}
+
+
+.update-state{
+    color: midnightblue;
+    background-color: royalblue;
+    font-size: 1.5rem;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 2rem;
+    border: 0.2rem solid grey
+}
+
+.update-state:hover{
+    background-color: blue;
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .flex-box-course>h2{
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+
+    .user-details-data p{
+        font-size: 1.2rem;
+    }
+
+}

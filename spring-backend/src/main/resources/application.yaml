@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: spring-backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/appdb
+    username: postgres
+    password: 12345678
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 215MB
+      enabled: false
+
+security:
+  jwt:
+    secret-key: 2b7ad1a897de75ca9caf64c3c38672c5eb6171457445f86d90ab7477762f6484
+    expiration-time: 3600000
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

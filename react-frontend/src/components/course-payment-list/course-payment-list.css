@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+
+.flex-box-payment-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    min-height: 95vh;
+    width: 100%;
+}
+
+.flex-box-payment-list>h2{
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 2rem;
+}
+
+
+.flex-box-payment-list>p{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.list-payment{
+    width: 65%;
+    border-collapse: collapse;
+    margin-bottom: 10rem;
+}
+
+.list-payment tr{
+    border: 0.2rem solid black;
+    border-radius: 10rem;
+    overflow: hidden;
+    gap: 10rem;
+}
+
+.list-payment th, .list-payment td {
+    text-align: center;
+    padding: 1rem 0.8rem;
+    border: 0.2rem solid black;
+    font-size: 1.2rem;
+}
+
+
+.payment-delete-button{
+    color: black;
+    background-color: red;
+    font-size: 1.2rem;
+    width: fit-content;
+    padding: 0.6rem;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+}
+
+
+.payment-delete-button:hover{
+    background-color: darkred;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .list-payment{
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .list-payment{
+        width: 95%;
+    }
+
+    .list-payment th, .list-payment td {
+        text-align: center;
+        padding: 0.3rem;
+        border: 0.1rem solid black;
+        font-size: 0.8rem;
+    }
+
+    .payment-delete-button{
+        font-size: 0.8rem;
+        padding: 0.2rem;
+    }
+}
+
+
