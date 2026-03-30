@@ -2,9 +2,9 @@ spring:
   application:
     name: spring-backend
   datasource:
-    url: jdbc:postgresql://localhost:5432/appdb
-    username: postgres
-    password: 12345678
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:appdb}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASS:12345678}
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
@@ -19,9 +19,14 @@ spring:
 
 security:
   jwt:
-    secret-key: 2b7ad1a897de75ca9caf64c3c38672c5eb6171457445f86d90ab7477762f6484
+    secret-key: ${JWT_SECRET:2b7ad1a897de75ca9caf64c3c38672c5eb6171457445f86d90ab7477762f6484}
     expiration-time: 3600000
 
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
+
+app:
+  seeding:
+    sample-data:
+      enabled: ${SAMPLE_DATA:true}
